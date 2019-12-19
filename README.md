@@ -1,6 +1,6 @@
 # react-native-switch-pro
 [![version](https://img.shields.io/npm/v/react-native-switch-pro.svg)](https://www.npmjs.com/package/react-native-switch-pro) [![downloads](https://img.shields.io/npm/dm/react-native-switch-pro.svg?style=flat)](https://www.npmjs.com/package/react-native-switch-pro)
-[![downloads](https://img.shields.io/npm/dt/react-native-switch-pro.svg?style=flat)](https://www.npmjs.com/package/react-native-switch-pro)  
+[![downloads](https://img.shields.io/npm/dt/react-native-switch-pro.svg?style=flat)](https://www.npmjs.com/package/react-native-switch-pro)
 A universal switch for android and iOS, it could be the best switch for react-native on Github.
 
 ## Preview
@@ -10,7 +10,7 @@ A universal switch for android and iOS, it could be the best switch for react-na
 
 ## Feature
 * Almost perfect switch on react-native
-* Have a good performance on both iOS and Android  
+* Have a good performance on both iOS and Android
 * Add gesture with `PanResponder`  
 * More animations to follow iOS native performance
 * Support async and sync event
@@ -21,8 +21,8 @@ A universal switch for android and iOS, it could be the best switch for react-na
 `npm install react-native-switch-pro --save`
 
 ## Usage
-* Sync  
-  
+* Sync
+
 ```JavaScript
 import Switch from 'react-native-switch-pro'
 ...
@@ -36,15 +36,15 @@ import Switch from 'react-native-switch-pro'
 ...
 ```
 
-* Async  
- 
+* Async
+
 ```JavaScript
 ...
   render() {
     return (
       <View style={styles.container}>
         <Switch onAsyncPress={(callback) => {
-          You can call your async module and just invoke callback(true) when succeed,  
+          You can call your async module and just invoke callback(true) when succeed,
           callback(false) when fail.
         }}/>
       </View>
@@ -71,8 +71,8 @@ onAsyncPress | has a callback with result of async | (value, callback) => {callb
 
 ## Notice
 * You'd better not use `onSyncPress` and `onAsyncPress` together or else, only `onSyncPress` will be invoked.
-* `value` is used with bidirectional binding which could be redux, state and so on.  
-In `onAsyncPress`, you should write like following (with state):  
+* `value` is used with bidirectional binding which could be redux, state and so on.
+In `onAsyncPress`, you should write like following (with state):
 
 	```javascript
 	<Switch
@@ -86,7 +86,3 @@ In `onAsyncPress`, you should write like following (with state):
 
 ## License
 *MIT*
-
-## Maybe I need your help
-It's my pleasure to develop the library for you.  
-Now I'm looking for a new and nice job and if you can help me, just click [here](https://github.com/poberwong/Maybe-I-need-your-help/blob/master/README.md). 
