@@ -166,7 +166,7 @@ export default class Switch extends React.Component<Props, State> {
         toValue: value ? this.offset : -this.offset,
         duration: 200,
         easing: Easing.linear,
-        useNativeDriver: true,
+        useNativeDriver: false,
       },
     ).start(callback);
   }
@@ -179,7 +179,7 @@ export default class Switch extends React.Component<Props, State> {
         toValue: value,
         duration: 200,
         easing: Easing.linear,
-        useNativeDriver: true,
+        useNativeDriver: false,
       },
     ).start(callback);
   }
